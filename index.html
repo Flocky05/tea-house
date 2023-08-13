@@ -5,8 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tea house</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700&family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              fontFamily:{
+                'Manrope':['Manrope','sans-serif']
+              },
+              backgroundImage:{
+                'banner':"url('./images/banner.png')"
+              }
+            }
+          }
+        }
+      </script>
 </head>
 <body>
-    <h3>Hi Mama</h3>
+    <!-- heder section start  -->
+    <div class="lg:flex justify-around mt-16 lg:mt-32">
+        <div class="p-4 text-center lg:text-start">
+            <h2 class="text-3xl lg:text-5xl font-bold font-Monrope">It's good <br>tea time at <br> The Tea House</h2>
+            <p class="font-Monrope py-8">Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your Taste Buds.</p>
+            <button class="px-6 py-2 rounded-lg text-lg text-white bg-gradient-to-r from-[#FF8938] to-[#F00] flex itmes-center justify-center gap-2">
+                <h3>Explore More </h3>
+                <img class="h-6 w-6" src="./images/btn icons/Frame.svg" alt="">
+             </button>
+        </div>
+        <div class="relative">
+            <img src="./images/banner.png" alt="">
+            <!-- <div class="p-6 w-3/6 bg-white shadow-lg flex items-center absolute -mb-32">
+                <img class="p-4" src="./images/btn icons/Group 5.svg" alt="">
+                <div>
+                    <h4 class="text-3xl font-bold">5.00</h4>
+                    <p>Trust Pilot Ratings</p>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <!-- heder section end -->
+    <!-- products section start   -->
+    <div class="text-center">
+        <h3 class="text-4xl font-bold font-Manrope">Our Featured Products</h3>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, <br> by injected humour, or randomised words which don't look even slightly believable. </p>
+        <div class="grid grid-cols-1 lg:grid-cols-4 justify-items-center p-10 lg:p-32 lg:m-12">
+            <div class="bg-gradient-to-t from-[#f4f4f400] to-[#F4F4F4] grid grid-cols-1 justify-items-center p-4 lg:w-60 mt-3">
+                <img src="./images/tea-1.png" alt="">
+                <h5 class="text-xl font-semibold">Milk Tea</h5>
+                <p>Creamer could be replaced by fresh milk</p>
+            </div>
+            <div class="bg-gradient-to-t from-[#f4f4f400] to-[#F4F4F4] grid grid-cols-1 justify-items-center p-4 lg:w-60 mt-3">
+                <img src="./images/tea-2.png" alt="">
+                <h5 class="text-xl font-semibold">Milk Tea</h5>
+                <p>Creamer could be replaced by fresh milk</p>
+            </div>
+            <div class="bg-gradient-to-t from-[#f4f4f400] to-[#F4F4F4] grid grid-cols-1 justify-items-center p-4 lg:w-60 mt-3">
+                <img src="./images/tea-3.png" alt="">
+                <h5 class="text-xl font-semibold">Milk Tea</h5>
+                <p>Creamer could be replaced by fresh milk</p>
+            </div>
+            <div class="bg-gradient-to-t from-[#f4f4f400] to-[#F4F4F4] grid grid-cols-1 justify-items-center p-4 lg:w-60 mt-3">
+                <img src="./images/tea-4.png" alt="">
+                <h5 class="text-xl font-semibold">Milk Tea</h5>
+                <p>Creamer could be replaced by fresh milk</p>
+            </div>
+        </div>
+    </div>
+    <!-- products section end -->
 </body>
 </html>
